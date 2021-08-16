@@ -1,0 +1,89 @@
+.HomePageCardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0 15%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.HomePageCards {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid rgba(0, 168, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 0 12px #ccc;
+}
+
+.imageDivWrapper {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.imageDivWrapper img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardDescriptionDiv {
+  padding: 10px;
+}
+
+.cardDescriptionDiv h3 {
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.authorWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.authorWrapper span {
+  color: var(--blue_color);
+  margin-right: 10px;
+}
+
+.authorWrapper p {
+  margin-left: 10px;
+}
+
+.descriptionText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  color: rgba(0, 0, 0, 0.438);
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .HomePageCardsWrapper {
+    padding: 0 6%;
+  }
+
+  .HomePageCards {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomePageCardsWrapper {
+    padding: 0 4%;
+  }
+
+  .HomePageCards {
+    width: 95%;
+  }
+}
